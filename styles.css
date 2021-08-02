@@ -4,6 +4,9 @@
   --main-bg-color: #ffffff;
   --header-link-clr: #000000;
   --main-link-clr: #000000;
+  --main-txt-clr: #000000;
+  --main-btn-background: #000000;
+  --main-btn-txt-clr: #ffffff;
 }
 *{
   margin: 0;
@@ -57,6 +60,7 @@ header .wrapper .cart{
   border-radius: 16px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+  z-index: 999;
 }
 header .wrapper .cart a{
   text-decoration: none;
@@ -72,6 +76,26 @@ main .wrapper{
 main .hero-section{
   position: relative;
   height: 100vh;
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.w3schools.com/howto/photographer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px;
+}
+main .hero-section .text{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--main-txt-clr);
+}
+main .hero-section .text button{
+  background-color: var(--main-btn-background);
+  color: var(--main-btn-txt-clr);
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
 }
 /* Featured Collection Section */
 main .wrapper .featured-collection-section{
