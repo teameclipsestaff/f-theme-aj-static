@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.15.3/css/all.css');
+:root {
+  --main-bg-color: #ffffff;
+  --header-link-clr: #000000;
+}
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--main-bg-color);
+}
+
+/* Header */
+header{
+  position: relative;
+  height: 100px;
+  width: 100%;
+}
+header .wrapper{
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+header .wrapper .logo-container{
+  flex: 1;
+}
+header .wrapper .logo-container a{
+  color: var(--header-link-clr);
+  text-decoration: none;
+}
+
+header .wrapper .menu-container{
+  flex: 1;
+  margin-top: 10px;
+}
+header .wrapper .menu-container ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+header .wrapper .menu-container ul li a{
+  text-decoration: none;
+  color: var(--header-link-clr);
+}
+
+header .wrapper .cart{
+  position: fixed;
+  top: 0;
+  right: 2rem;
+  font-size: 1rem;
+  background-color: #000000;
+  padding: 16px 1rem;
+  border-radius: 16px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+header .wrapper .cart a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Main */
+main .wrapper{
+  width: 80%;
+  margin: auto;
+}
+/* Hero Section */
+main .hero-section{
+  position: relative;
+  height: 100vh;
+}
+/* Featured Collection Section */
+main .wrapper .featured-collection-section{
+  
+}
+main .wrapper .featured-collection-section h1{
+  text-align: center;
+}
+main .wrapper .featured-collection-section .grid{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  text-align: center;
+}
+main .wrapper .featured-collection-section .grid a{
+  text-decoration: none;
+  color: #000000;
+}
+main .wrapper .featured-collection-section .grid .grid-product img{
+  height: 20rem;
+}
+@media only screen and (max-width: 600px) {
+  main .wrapper .featured-collection-section .grid{
+    grid-template-columns: 1fr;
+  }
+}
