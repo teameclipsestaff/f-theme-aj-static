@@ -3,6 +3,7 @@
 :root {
   --main-bg-color: #ffffff;
   --header-link-clr: #000000;
+  --main-link-clr: #000000;
 }
 *{
   margin: 0;
@@ -89,13 +90,41 @@ main .wrapper .featured-collection-section .grid{
 }
 main .wrapper .featured-collection-section .grid a{
   text-decoration: none;
-  color: #000000;
+  color: var(--main-link-clr);
 }
 main .wrapper .featured-collection-section .grid .grid-product img{
   height: 20rem;
 }
 @media only screen and (max-width: 600px) {
   main .wrapper .featured-collection-section .grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Collections Section */
+main .wrapper .collections-section{
+  min-height: 100vh;
+}
+main .wrapper .collections-section h1{
+  text-align: center;
+}
+main .wrapper .collections-section .grid{
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+main .wrapper .collections-section .grid a{
+  text-align: center;
+  text-decoration: none;
+  color: var(--main-link-clr);
+}
+main .wrapper .collections-section .grid .collection img{
+  height: 20rem;
+  border-radius: 50%;
+}
+@media only screen and (max-width: 600px) {
+  main .wrapper .collections-section .grid{
     grid-template-columns: 1fr;
   }
 }
