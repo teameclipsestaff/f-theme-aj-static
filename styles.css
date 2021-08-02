@@ -74,7 +74,8 @@ main .hero-section{
 }
 /* Featured Collection Section */
 main .wrapper .featured-collection-section{
-  
+  min-height: 100vh;
+  position: relative;
 }
 main .wrapper .featured-collection-section h1{
   text-align: center;
